@@ -10,6 +10,6 @@ def greet(name: str) -> str:
     """
     return f"Hello, {name}!"
 
-greeted_name = "Ahmed1"
+greeted_name = "Ahmed2"
 if __name__ == "__main__":
     print(greet(greeted_name))
