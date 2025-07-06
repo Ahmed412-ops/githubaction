@@ -1,6 +1,6 @@
 #!/bin/bash
 
-expected_output="Hello, Ahmed3!"
+expected_output="Hello, Ahmed!"
 output=$(python ./src/main.py | tr -d '\n')
 
 if [ "$output" = "$expected_output" ]; then
