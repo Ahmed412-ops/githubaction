@@ -20,7 +20,7 @@ jobs:
 
             - name: test code
               run: |
-                chmod +x src/main.py
+                chmod +x ./src/test.sh
 
-                ./src/main.py
+                ./src/test.sh
             

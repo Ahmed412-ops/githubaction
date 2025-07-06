@@ -1,6 +1,6 @@
 #!/bin/bash
 
-$expected_output = "Hello, Ahmed2!"
+$expected_output = "Hello, Ahmed3!"
 
 $output=$(python ./src/main.py)
 
