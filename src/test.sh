@@ -1,10 +1,9 @@
 #!/bin/bash
 
-$expected_output = "Hello, Ahmed3!"
+expected_output="Hello, Ahmed3!"
+output=$(python ./src/main.py | tr -d '\n')
 
-$output=$(python ./src/main.py)
-
-if [ "$output" == "$expected_output" ]; then
+if [ "$output" = "$expected_output" ]; then
     echo "Test passed!"
 else
     echo "Test failed! Expected '$expected_output' but got '$output'."
