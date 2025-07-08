@@ -1,10 +1,19 @@
 on:
     workflow_dispatch:
+        inputs:
+            environment:
+                description: 'Choose environment to deploy'
+                required: true
+                default: 'master'
+                type: choice
+                options:
+                    - master
+                    - test
+
 jobs:
     manual_job:
         name: Manual Job
         runs-on: ubuntu-latest
         steps:
             - name: deploy message
-              run: echo "This is a manual job that can be triggered manually from the GitHub Actions UI."
-
+              run: echo "This is a manual job that can be triggered manually from the GitHub Actions UI. Selected environment: ${{ github.event.inputs.environment }}"
