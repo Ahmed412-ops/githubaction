@@ -23,4 +23,3 @@ jobs:
                 chmod +x ./src/test.sh
 
                 ./src/test.sh
-            

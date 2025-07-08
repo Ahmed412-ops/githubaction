@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron: '5 * * * *'  # Every hour at 5 minutes past the hour
+
+jobs:
+  scheduled_job:
+    name: Scheduled Job
+    runs-on: ubuntu-latest
+    steps:
+      - name: test
+        run: echo "This is a scheduled job running every hour at 5 minutes past the hour."
