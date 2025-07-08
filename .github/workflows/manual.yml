@@ -16,4 +16,6 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: deploy message
-              run: echo "This is a manual job that can be triggered manually from the GitHub Actions UI. Selected environment: ${{ github.event.inputs.environment }}"
+              run: |
+                    echo 'This is a manual job that can be triggered manually from the GitHub Actions UI.'
+                    echo 'Selected environment: ${{ github.event.inputs.environment }}'
