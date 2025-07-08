@@ -1,0 +1,10 @@
+on:
+    workflow_dispatch:
+jobs:
+    manual_job:
+        name: Manual Job
+        runs-on: ubuntu-latest
+        steps:
+            - name: deploy message
+              run: echo "This is a manual job that can be triggered manually from the GitHub Actions UI."
+
