@@ -1,7 +1,6 @@
 on:
   schedule:
-    - cron: '5 * * * *'  # Every hour at 5 minutes past the hour
-
+    - cron: '5 * * 1 *' 
 jobs:
   scheduled_job:
     name: Scheduled Job
