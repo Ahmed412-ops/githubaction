@@ -10,3 +10,5 @@ jobs:
               run: "docker run -d -p 8080:80 nginx"
             - name: ip address show
               run: "ip addr show"
+            - name: docker images
+              run: "docker images"
