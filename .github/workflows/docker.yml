@@ -6,3 +6,7 @@ jobs:
         steps:
             - name: docker images
               run: "docker images"
+            - name: docker run nginx
+              run: "docker run -d -p 8080:80 nginx"
+            - name: ip address show
+              run: "ip addr show"
